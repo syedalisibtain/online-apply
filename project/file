@@ -1,0 +1,16 @@
+project/
+    ├── admin/
+    │   ├── admin_login.php
+    │   ├── admin_dashboard.php
+    │   
+    ├── assets/
+    │   ├── css/
+    │   │   └── styles.css
+    │   └── js/
+    │       └── script.js
+    ├── includes/
+    │   ├── db.php (Database connection)
+    │   
+    ├── index.html (User-friendly web form)
+    ├── process.php (Backend logic for form submission)
+    └── success.php (Confirmation page after form submission)

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Job Application Form</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 jumbotron">
+                            <h2 style="text-align: center;">
+                                Welcome To Online Job Application Form
+                                <span style="float: right;"><a href="admin/admin_login.php" class="btn btn-info">Admin Login</a></span>
+                            </h2>
+                    </div>
+                </div>
+            </div>
+    <div class="container">
+        <div class="applicationForm-box">
+            <form id="applicationForm" action="process.php" method="post">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                    </div>
+                <div class="col-md-6">   
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="country">Country:</label>
+                        <input type="text" id="country" name="country" required>
+                    </div>
+                </div>
+                <div class="col-md-6">    
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="email">Email ID:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="col-md-6">   
+                    <div class="form-group">
+                        <label for="position">Applied for Position:</label>
+                        <select id="position" name="position" required>
+                            <option value="Developer">Developer</option>
+                            <option value="HR">HR</option>
+                            <option value="SEO">SEO</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6"> 
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+        </div>
+    </form>
+    </div>
+    </div>
+</body>
+</html>
